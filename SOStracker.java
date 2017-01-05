@@ -33,7 +33,7 @@ public class SOStracker {
 				System.out.println("Error: Pokemon not found.\n");
 				print = false;
 			}
-			System.out.println("Available Pokemon : [ Ditto ]");
+			System.out.println("Available Pokemon : [ Beldum, Ditto , Zubat ]");
 			System.out.print("Select a Pokemon to chain: ");
 
 			String pokemon = input.nextLine();
@@ -112,6 +112,12 @@ public class SOStracker {
 			case "ditto":
 				loadDitto();
 				return true;
+			case "beldum":
+				loadBeldum();
+				return true;
+			case "zubat":
+				loadZubat();
+				return true;
 			default:
 				return false;
 		}
@@ -159,10 +165,24 @@ public class SOStracker {
 		return 0;
 	}
 
+	/* Pokemon Profiles */
+
 	public static void loadDitto() {
 		ppLeft = 20;
 		resetVal = 20;
 		pokemon = "Ditto";
+	}
+
+	public static void loadBeldum() {
+		ppLeft = 20;
+		resetVal = 20;
+		pokemon = "Beldum";
+	}
+
+	public static void loadZubat() {
+		ppLeft = 85;
+		resetVal = 85;
+		pokemon = "Zubat";
 	}
 
 }
